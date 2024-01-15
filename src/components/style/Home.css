@@ -1,0 +1,27 @@
+/* styles.css (or styles.scss) */
+
+.home-section {
+    padding: 50px;
+    background-color: #E5F1FE;
+  }
+  
+  .home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .home-text {
+    flex: 1;
+  }
+  
+  .home-image {
+    flex: 1;
+  }
+  
+  .home-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as per your design */
+    height: auto;
+  }
+  

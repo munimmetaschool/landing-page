@@ -1,0 +1,27 @@
+/* styles.css (or styles.scss) */
+
+.about-section {
+    padding: 50px;
+    box-shadow: 2px 2px 5px grey;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as per your design */
+    height: auto;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  
