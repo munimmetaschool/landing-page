@@ -1,18 +1,13 @@
 /* styles.css (or styles.scss) */
 .navbar {
   position: fixed;
-  bottom: 30px;
-  padding: 5px 10px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fff;
   z-index: 100;
-  background-color: #646cff;
-  border-radius: 25px;
-  width: 30%;
-  margin-left: 30%;
-  margin-top: 10px;
+  background-color: #7d73bd;
+  width: 100%;
   }
 
   .nav-links {
@@ -36,9 +31,17 @@
     opacity: 4;
   }
 
+  @font-face {
+    font-family: 'GABRWFFR';
+    src: local('GABRWFFR'), url(./fonts/gabriel_weiss_friends/GABRWFFR.ttf) format('opentype');
+  }
+
 .logo {
-  font-size: 20px;
+  font-family: 'GABRWFFR';
+  font-size: 40px;
+  letter-spacing: 3px;
   font-weight: bold;
+  color: #fff;
 }
 
 .nav-item.active.btn-item {
@@ -71,4 +74,15 @@
 
 .btn-item .link{
   color: white;
+}
+
+.btn{
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 25px; 
+}
+
+.nav-item .btn:hover {
+  color: #ffc107;
 }

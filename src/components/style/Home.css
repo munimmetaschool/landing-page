@@ -2,8 +2,8 @@
 
 .home-section {
     padding: 5px;
-    background-color: #E5F1FE;
-    height: 500px;
+    background-color: #7d73bd;
+    height: 800px;
     align-items: center;
     justify-content: space-around;
     display: flex;
@@ -29,4 +29,17 @@
     max-width: 400px; /* Adjust the maximum width as per your design */
     height: auto;
   }
+
+  @font-face {
+    font-family: 'GABRWFFR';
+    src: local('GABRWFFR'), url(./fonts/gabriel_weiss_friends/GABRWFFR.ttf) format('opentype');
+  }
+
+.font-style {
+  font-family: 'GABRWFFR';
+  font-size: inherit;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #fff;
+}
   

@@ -13,6 +13,7 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
+      <a href="/" className="logo">F.R.I.E.N.D.S</a>
       <ul className="nav-links">
         {SECTIONS.map((section) => (
           <NavItem
@@ -22,6 +23,15 @@ const NavBar = () => {
             onClick={() => handleNavClick(section)}
           />
         ))}
+        <li className="nav-item">
+          <button className='btn'>Bridge</button>
+        </li>
+        <li className="nav-item">
+          <button className='btn'>Buy Now</button>
+        </li>
+        <li className="nav-item">
+          <button className='btn'>Connect</button>
+        </li>
       </ul>
     </nav>
   );

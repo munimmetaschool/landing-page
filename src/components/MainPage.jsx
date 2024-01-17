@@ -10,10 +10,11 @@ import './style/MainPage.css'
 const MainPage = () => {
   return (
     <div className="main-page">
-        <Header/>         
+        {/* <Header/>    */}
+        <NavBar />      
         <main>
             <Home />
-            <NavBar />
+            
             <About/>
             <HowToBuy />
         </main>
