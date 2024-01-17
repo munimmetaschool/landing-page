@@ -1,34 +1,74 @@
 /* styles.css (or styles.scss) */
-
 .navbar {
-    background-color: white;
-    padding: 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    box-shadow: 2px 2px 5px grey;
+  position: fixed;
+  bottom: 30px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  z-index: 100;
+  background-color: #646cff;
+  border-radius: 25px;
+  width: 30%;
+  margin-left: 30%;
+  margin-top: 10px;
   }
-  
-  .navbar-list {
+
+  .nav-links {
+    display: flex;
     list-style: none;
-    padding: 0;
     margin: 0;
-    display: flex;
+    color: #fff;
   }
   
-  .navbar-item {
+  .nav-item {
+    margin-top: 5px;
     margin-right: 20px;
   }
   
-  .navbar-item a {
+  .nav-item a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
-    font-size: 20px;
   }
   
-  .navbar-item a:hover {
-    color: #ffc107;
+  .nav-item a:hover {
+    opacity: 4;
   }
-  
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item.active.btn-item {
+  font-weight: bold;
+  opacity: 2;
+
+}
+
+.active-line {
+  position: absolute;
+  bottom: 5px;
+  height: 2px;
+  width: 20px;
+  background-color: #000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-item .btn-item {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.nav-item .btn-item:hover {
+  opacity: 2;
+}
+
+.btn-item .link{
+  color: white;
+}

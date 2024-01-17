@@ -3,7 +3,7 @@ import './style/Home.css'
 
 const Home = () => {
   return (
-    <section id="home" className="home-section">
+    <section id="Home" className="home-section">
       <div className="home-content">
         <div className="home-text">
           <h1>Welcome to Our Token Landing Page</h1>
