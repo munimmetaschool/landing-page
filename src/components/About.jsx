@@ -9,7 +9,7 @@ const About = () => {
             <div className="about-box-content">
                 <h3 className="about-box-heading">About</h3>
                 <p className="about-box-description">
-                    Download MetaMask or your preferred wallet from the app store or Google Play Store. Desktop users can download the Google Chrome extension from metamask.io.
+                Introducing the F.R.I.E.N.D.S. Token – a digital celebration inspired by the iconic TV sitcom. Beyond just a cryptocurrency, it encapsulates the spirit of camaraderie and shared experiences. Carefully planned and transparent, F.R.I.E.N.D.S. stands out in the unpredictable world of token launches. Join our community-driven venture as we explore its unique Tokenomics in the upcoming Build in Public series. This is not just a token; it's a guide for Web3 projects, a homage to friendship, and a journey towards community-driven success. Welcome to F.R.I.E.N.D.S. – where friendship meets the blockchain!
                 </p>
             </div>
       </div>
@@ -17,7 +17,7 @@ const About = () => {
             <div className="about-box-content">
                 <h3 className="about-box-heading">Contact</h3>
                 <p className="about-box-description">
-                    Download MetaMask or your preferred wallet from the app store or Google Play Store. Desktop users can download the Google Chrome extension from metamask.io.
+                  Have questions, suggestions, or just want to share your thoughts? We'd love to hear from you! Reach out to us at insert-email and be a part of the conversation. Your input is invaluable as we navigate the exciting world of token launches together. Let's build something extraordinary – together.
                 </p>
             </div>
       </div>
@@ -25,7 +25,7 @@ const About = () => {
             <div className="about-box-content">
                 <h3 className="about-box-heading">Tokenomics</h3>
                 <p className="about-box-description">
-                    Download MetaMask or your preferred wallet from the app store or Google Play Store. Desktop users can download the Google Chrome extension from metamask.io.
+                In the world of F.R.I.E.N.D.S. tokens, understanding the Toekenomics is key. Dive into the intricacies of our token economy, where transparency meets strategy. We break down the details of our tokenomics to help you comprehend the dynamics behind F.R.I.E.N.D.S. token – from distribution models to utility within the ecosystem. Read more about it here add-link.
                 </p>
             </div>
       </div>

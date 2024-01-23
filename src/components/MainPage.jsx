@@ -10,15 +10,17 @@ import './style/MainPage.css'
 const MainPage = () => {
   return (
     <div className="main-page">
-        {/* <Header/>    */}
-        <NavBar />      
+        <header>
+          <NavBar />  
+        </header>  
         <main>
             <Home />
-            
             <About/>
             <HowToBuy />
         </main>
+        <footer>
         <Footer></Footer>
+        </footer>   
     </div>
   );
 };

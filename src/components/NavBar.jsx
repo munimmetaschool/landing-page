@@ -13,26 +13,28 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <a href="/" className="logo">F.R.I.E.N.D.S</a>
-      <ul className="nav-links">
-        {SECTIONS.map((section) => (
-          <NavItem
-            key={section}
-            section={section}
-            isActive={section === activeSection}
-            onClick={() => handleNavClick(section)}
-          />
-        ))}
-        <li className="nav-item">
-          <button className='btn'>Bridge</button>
-        </li>
-        <li className="nav-item">
-          <button className='btn'>Buy Now</button>
-        </li>
-        <li className="nav-item">
-          <button className='btn'>Connect</button>
-        </li>
-      </ul>
+      <div className='navbar-page'>
+        <a href="/" className="logo">F<span className='dot dot-1'>.</span>R<span className='dot dot-2'>.</span>I<span className='dot dot-3'>.</span>E<span className='dot dot-1'>.</span>N<span className='dot dot-2'>.</span>D<span className='dot dot-3'>.</span>S</a>
+        <ul className="nav-links">
+          {SECTIONS.map((section) => (
+            <NavItem
+              key={section}
+              section={section}
+              isActive={section === activeSection}
+              onClick={() => handleNavClick(section)}
+            />
+          ))}
+          <li className="nav-item">
+            <button className='btn'>Bridge</button>
+          </li>
+          <li className="nav-item">
+            <button className='btn'>Buy Now</button>
+          </li>
+          <li className="nav-item">
+            <button className='btn'>Connect</button>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

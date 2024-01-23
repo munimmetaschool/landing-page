@@ -1,23 +1,56 @@
 /* styles.css (or styles.scss) */
 
 .home-section {
-    padding: 5px;
-    background-color: #7d73bd;
+    margin-top: 80px;
+    width: 100%;
+    background-color: #fff;
     height: 800px;
+    z-index: 100;
+    margin-right: 0px;
     align-items: center;
     justify-content: space-around;
     display: flex;
-    text-align: center;
   }
+
+    .home-page{
+      background-color: #7D73BE;
+      border-radius: 25px;
+      width: 96%;
+      padding: 20px 10px;
+      align-items: center;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
   
   .home-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
+    margin-top: 80px;
   }
+
+  .home-dot{
+    font-size: 80px;
+  }
+
+  @font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: local('SourceSansPro-Bold.ttf'), url(./fonts/source-sans-pro/SourceSansPro-Bold.ttf.ttf) format('opentype');
+  }
+
   
   .home-text {
+    font-family: 'SourceSansPro-Bold';
+    font-style: none;
+    font-size: 20px;
     flex: 1;
+  }
+
+  .home-description{
+    font-weight: bold;
   }
   
   .home-image {
@@ -25,7 +58,7 @@
   }
   
   .home-image img {
-    width: 100%;
+    width: 80%;
     max-width: 400px; /* Adjust the maximum width as per your design */
     height: auto;
   }
@@ -41,5 +74,18 @@
   letter-spacing: 2px;
   font-weight: bold;
   color: #fff;
+}
+
+.home-stickers{
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.home-stickers img{
+  width: 200px;
 }
   

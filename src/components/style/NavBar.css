@@ -1,20 +1,24 @@
 /* styles.css (or styles.scss) */
 .navbar {
   position: fixed;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 100;
-  background-color: #7d73bd;
   width: 100%;
+  top: 0;
+  background-color: #fff;
+  }
+
+  .navbar-page{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
   }
 
   .nav-links {
     display: flex;
     list-style: none;
     margin: 0;
-    color: #fff;
+    color: #7d73bd;
+    font-size: 17px;
   }
   
   .nav-item {
@@ -41,8 +45,27 @@
   font-size: 40px;
   letter-spacing: 3px;
   font-weight: bold;
-  color: #fff;
+  color: #7d73bd;
+  font-style: none;
+  /* color: #5d5d5d; */
 }
+
+.dot{
+  font-size: 40px;
+}
+
+.dot-1{
+  color: #e91e24;
+}
+
+.dot-2{
+  color: #06b2e7;
+}
+
+.dot-3{
+  color: #fbbd14;
+}
+
 
 .nav-item.active.btn-item {
   font-weight: bold;
@@ -62,7 +85,7 @@
 .nav-item .btn-item {
   background-color: transparent;
   border: none;
-  color: white;
+  color: #7d73bd;
   text-align: center;
   opacity: 0.6;
   transition: 0.3s;
@@ -73,16 +96,16 @@
 }
 
 .btn-item .link{
-  color: white;
+  color: #7d73bd;
 }
 
 .btn{
-  border: 1px solid #fff;
+  border: 1px solid #7d73bd;
   background-color: transparent;
-  color: #fff;
+  color: #7d73bd;
   border-radius: 25px; 
 }
 
 .nav-item .btn:hover {
-  color: #ffc107;
+  color: #4F4499;
 }
