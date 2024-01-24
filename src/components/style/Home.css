@@ -36,16 +36,11 @@
     font-size: 80px;
   }
 
-  @font-face {
-    font-family: 'SourceSansPro-Bold';
-    src: local('SourceSansPro-Bold.ttf'), url(./fonts/source-sans-pro/SourceSansPro-Bold.ttf.ttf) format('opentype');
-  }
-
   
   .home-text {
-    font-family: 'SourceSansPro-Bold';
     font-style: none;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.5;
     flex: 1;
   }
 

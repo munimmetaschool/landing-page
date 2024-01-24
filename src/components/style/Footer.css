@@ -47,7 +47,7 @@
   }
 
   .about-metaschool-description{
-    font-weight: bold;
+    font-weight: none;
   }
 
   .about-metaschool:hover {
@@ -64,7 +64,7 @@
   
   .about-us p,
   .about-metaschool p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     color: #fff;
   }

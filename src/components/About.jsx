@@ -9,7 +9,7 @@ const About = () => {
             <div className="about-box-content">
                 <h3 className="about-box-heading">About</h3>
                 <p className="about-box-description">
-                Introducing the F.R.I.E.N.D.S. Token – a digital celebration inspired by the iconic TV sitcom. Beyond just a cryptocurrency, it encapsulates the spirit of camaraderie and shared experiences. Carefully planned and transparent, F.R.I.E.N.D.S. stands out in the unpredictable world of token launches. Join our community-driven venture as we explore its unique Tokenomics in the upcoming Build in Public series. This is not just a token; it's a guide for Web3 projects, a homage to friendship, and a journey towards community-driven success. Welcome to F.R.I.E.N.D.S. – where friendship meets the blockchain!
+                Introducing the F.R.I.E.N.D.S. Token – a digital celebration inspired by the iconic TV sitcom. Beyond just a cryptocurrency, it encapsulates the spirit of camaraderie and shared experiences. Carefully planned and transparent, F.R.I.E.N.D.S. stands out in the unpredictable world of token launches. 
                 </p>
             </div>
       </div>
