@@ -4,43 +4,18 @@
     background-color: #fff;
     width: 100%;
     padding: 20px 10px;
-    width: 100%;
     align-items: center;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
     text-align: center;
-    z-index: 100;
     margin-right: 0px;
   }
 
-
-  
   .about-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  
-  .about-image {
-    flex: 1;
-  }
-  
-  .about-image img {
-    width: 100%;
-    max-width: 400px; /* Adjust the maximum width as per your design */
-    height: auto;
-  }
-  
-  .about-text {
-    flex: 1;
-  }
-  
-  .about-section-heading {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 30px;
   }
   
   .about-section-box {
@@ -48,38 +23,36 @@
     border: 1px solid #7d73bd; /* Add a border */
     color: #fff;
     border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: space-around;
     margin: 10px;
     width: 30%;
     height: 300px;
-  }
-  
-  .box-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    object-fit: cover;
-  }
-  
-  .about-box-content {
-    text-align: left; /* Align text to the left */
+    padding: 10px 15px;
   }
   
   .about-box-heading {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
   }
   
   .about-box-description {
     font-size: 15px;
     line-height: 1.5;
     color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-around;
+    margin-top: 20px;
   }
 
   /* Add hover styles for the section-box class */
@@ -95,6 +68,7 @@
 
 .about-section-box .about-box-content .about-box-description {
   color: #fff; /* Change the text color for better visibility */
+  font-weight: none;
 }
 
 /* Optional: Add box shadow for a subtle lift effect on hover */

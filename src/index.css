@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: local('SourceSansPro-Bold.ttf'), url(./fonts/source-sans-pro/SourceSansPro-Bold.ttf.ttf) format('opentype');
+  font-family: 'MondayFeelings';
+  src: local('MondayFeelings-7BD2l.ttf'), url(./fonts/monday-feelings-font/MondayFeelings-7BD2l.ttf) format('opentype');
 }
 
 :root {
-  font-family: "IBM Plex Mono",monospace;;
+  font-family: "MondayFeelings";
   line-height: 1.5;
   font-weight: 500;
 

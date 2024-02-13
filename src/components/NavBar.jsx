@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style/NavBar.css'
 import NavItem from './NavItem';
+
 
 const SECTIONS = ['Home', 'About', 'How To Buy'];
 
@@ -31,7 +32,7 @@ const NavBar = () => {
             <button className='btn'>Buy Now</button>
           </li>
           <li className="nav-item">
-            <button className='btn'>Connect</button>
+            <ConnectMetaMask></ConnectMetaMask>
           </li>
         </ul>
       </div>
@@ -41,37 +42,49 @@ const NavBar = () => {
 
 export default NavBar;
 
+function ConnectMetaMask() {
 
-// import React from 'react';
-// import { Link } from 'react-scroll';
-// import './style/NavBar.css'
+  const [isWalletInstalled, setIsWalletInstalled] = useState(false);
+  // state for keeping track of current connected account.
+  const [account, setAccount] = useState(null);
 
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <ul className="navbar-list">
-//         <li className="navbar-item">
-//           <Link to="home" smooth={true} duration={500}>Home</Link>
-//         </li>
-//         <li className="navbar-item">
-//           <Link to="about" smooth={true} duration={500}>About</Link>
-//         </li>
-//         <li className="navbar-item">
-//           <Link to="how-to-buy" smooth={true} duration={500}>How to Buy</Link>
-//         </li>
-//         <li className="navbar-item">
-//           <Link to="tokenomics" smooth={true} duration={500}>Tokenomics</Link>
-//         </li>
-//         <li className="navbar-item">
-//           <Link to="roadmap" smooth={true} duration={500}>Roadmap</Link>
-//         </li>
-//         <li className="navbar-item">
-//           <button>Buy Now</button>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
+  useEffect(() => {
+      if (window.ethereum) {
+          setIsWalletInstalled(true);
+      }
+    }, []);
 
-// export default Navbar;
+  async function connectWallet() {
+      window.ethereum
+      .request({
+          method: "eth_requestAccounts",
+      })
+      .then((accounts) => {
+          setAccount(accounts[0]);
+      })
+      .catch((error) => {
+          alert("Something went wrong");
+      });
+  }
+
+  if (account === null) {
+    return (
+      <div>
+        {
+          isWalletInstalled ? (
+            <button onClick={connectWallet} className='btn'>Connect Wallet</button>
+          ) : (
+            <p>Install Metamask wallet</p>
+          )
+        }
+
+      </div>
+    );
+  }
+  return (
+      <div>
+        <p>Connected at: {account}</p>
+      </div>
+  );
+}
 

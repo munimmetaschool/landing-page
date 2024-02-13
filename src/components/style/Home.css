@@ -11,7 +11,7 @@
     justify-content: space-around;
     display: flex;
   }
-
+  /* 7D73BE */
     .home-page{
       background-color: #7D73BE;
       border-radius: 25px;
@@ -50,12 +50,15 @@
   
   .home-image {
     flex: 1;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
   }
   
   .home-image img {
     width: 80%;
     max-width: 400px; /* Adjust the maximum width as per your design */
-    height: auto;
   }
 
   @font-face {

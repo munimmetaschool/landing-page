@@ -1,7 +1,16 @@
 import React from 'react';
 import './style/Home.css'
+import Spline from '@splinetool/react-spline';
+
+function Coin() {
+  return (
+    <Spline scene="https://prod.spline.design/Ji5dSg0tvc89MvfF/scene.splinecode" />
+  );
+}
+
 
 const Home = () => {
+
   return (
     <section id="Home" className="home-section">
       <div className='home-page'>
@@ -11,7 +20,7 @@ const Home = () => {
           <p className='home-description'>Where Web3 meets the world of sitcoms, and token launches become a community affair.</p>
         </div>
         <div className="home-image">
-          <img src="/img/Friends-token-2.png" alt="Token Image" />
+          <Coin></Coin>
         </div>
       </div>
       <div className="home-stickers">
